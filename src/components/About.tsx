@@ -36,18 +36,15 @@ export default function About() {
         <div className="grid items-start gap-10 md:grid-cols-[1.15fr_1fr] md:gap-20">
           <div data-reveal className="space-y-5 text-[1.05rem] leading-[1.75] text-[#5a6472]">
             <p>
-              I&apos;m Hyuu — a backend-focused developer who designs and ships the{" "}
+              Hi, I&apos;m Hyuu. I&apos;m an SMK student majoring in Automotive Engineering, and programming
+              is one of my biggest hobbies. I enjoy learning{" "}
               <strong className="font-semibold text-[#0c1424]">
-                infrastructure behind products people actually use
+                backend development, APIs, automation, AI
               </strong>
-              . My work sits where APIs, databases, and automation meet: authentication flows, data
-              pipelines, integrations, and the AI features layered on top of them.
+              , and building useful digital tools.
             </p>
-            <p>
-              I&apos;m interested in{" "}
-              <strong className="font-semibold text-[#0c1424]">building practical products</strong> rather
-              than simply writing code — systems that are observable, maintainable, and ready for real
-              traffic from day one.
+            <p className="font-head text-[1.1rem] font-semibold tracking-[-0.01em] text-[#0c1424]">
+              Automotive student by day. Developer by passion.
             </p>
           </div>
 

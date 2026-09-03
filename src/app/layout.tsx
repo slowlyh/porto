@@ -6,47 +6,56 @@ const sora = Sora({
   subsets: ["latin"],
   weight: ["600", "700", "800"],
   variable: "--font-head",
+  display: "swap",
 });
 
 const figtree = Figtree({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   variable: "--font-body",
+  display: "swap",
 });
 
 const mono = JetBrains_Mono({
   subsets: ["latin"],
   weight: ["400", "500"],
   variable: "--font-mono",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Hyuu — Backend Developer",
+  metadataBase: new URL("https://porto-*.vercel.app"),
+  title: {
+    default: "Hyuu — Backend Developer",
+    template: "%s — Hyuu",
+  },
   description:
-    "Backend developer building fast, scalable, accessible, AI-powered experiences for the modern web — APIs, databases, automation, and cloud infrastructure.",
+    "Hyuu — an SMK Automotive Engineering student with a passion for programming, backend development, APIs, automation, and AI.",
   keywords: [
     "Hyuu",
     "backend developer",
+    "SMK Automotive",
     "API",
     "Node.js",
-    "PostgreSQL",
-    "Supabase",
-    "AI integration",
+    "automation",
+    "AI",
     "portfolio",
   ],
-  authors: [{ name: "Hyuu" }],
+  authors: [{ name: "Hyuu", url: "https://github.com/slowlyh/" }],
+  creator: "Hyuu",
   openGraph: {
     title: "Hyuu — Backend Developer",
     description:
-      "Backend developer building fast, scalable, accessible, AI-powered experiences for the modern web.",
+      "An SMK Automotive Engineering student with a passion for programming, backend development, APIs, automation, and AI.",
     type: "website",
     locale: "en_US",
+    siteName: "Hyuu",
   },
   twitter: {
     card: "summary",
     title: "Hyuu — Backend Developer",
     description:
-      "Backend developer building fast, scalable, accessible, AI-powered experiences for the modern web.",
+      "An SMK Automotive Engineering student with a passion for programming, backend development, APIs, automation, and AI.",
   },
   robots: { index: true, follow: true },
 };
